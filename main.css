@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #BCDAFF;
+}
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.base{
+    width: 100%;
+	max-width: 650px;
+    min-height: 410px;
+    background-color: #54746b;
+    border: 8px solid #3a4645;
+    border-radius: 40px;
+
+    display: flex;
+	flex-direction: column;
+	overflow: auto;
+    grid-template-columns: repeat(6, 1fr);
+}
+.display { 
+    min-height: 100px;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    background-color: #dedfdd;
+    border: 8px solid #3a4645;
+    border-radius: 20px;
+    margin: 20px 20px 5px 20px;
+	box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+    color: #000; 
+	text-align: right;
+}
+.input {
+    font-family: octosquares;
+    color: #000;
+    background-color: #dedfdd;
+    font-size: 36px;
+}
+.keyboard{
+	background-color: #54746b;
+	padding: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 1rem;
+	box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.2);
+}
+.button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 15px 25px;
+    width: auto;
+
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background-color: #ecb07f;
+    box-shadow: 0 9px #9e4224;
+}
+.whitebutton{
+    background-color: #fff;
+    box-shadow: 0 9px #dedfdd;
+}
+.resultbutton{
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:active{
+    background-color: #ecb07f;
+    box-shadow: 0 5px #9e4224;
+    transform: translateY(4px);
+}
+.whitebutton:active{
+    background-color: #fff;
+    box-shadow: 0 5px #dedfdd;
+    transform: translateY(4px);
+}
+
+@font-face {
+    font-family: octosquares;
+    src: url(assets/Octosquares.ttf);
+  }
